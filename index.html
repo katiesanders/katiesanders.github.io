@@ -1,67 +1,28 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Inconsolata|Press+Start+2P&display=swap');
-            h1 {
-                text-align: center;
-                letter-spacing: 10px;
-                font-family: 'Press Start 2P', cursive;
-                color: white;
-            }
-            .parallax {
-                background-image: url("stars.jpg");
-                height: 500px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            body {
-                background-color: black;
-            }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: white;
-            }
-            li {
-                float: left;
-            }
-            li a {
-                font-family: 'Inconsolata', monospace;
-                display: block;
-                color: blue;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            a {
-                display: block;
-                padding: 8px;
-                background-color: white;
-            }
-            p {
-                color: white;
-                text-align: center;
-                font-family: 'Roboto Mono', monospace;
-                font-size: 14px;
-            }
-        </style>
+        <link rel="stylesheet" href="katiesandersstyle.css">
         <title>Katie Sanders</title>
     </head>
-
+    <!-- <canvas id="bgCanvas"></canvas>
+    <script>
+        
+    </script> -->
     <body>
-        <h1>Kathryn Sanders</h1>
+        <h1 style="margin-right:-20px; margin-left:5px">Kathryn Sanders</h1>
+        <div class="nav">
         <ul>
-                <li><a href="default.asp">Home</a></li>
-                <li><a href="contact.asp">Code/Projects</a></li>
-                <li><a href="about.asp">Music</a></li>
+                <li><a class ="nav" href="default.asp">Home</a></li>
+                <li><a class="nav" href="contact.asp">Code/Projects</a></li>
+                <li><a class="nav" href="about.asp">Music</a></li>
+                <li><a class="nav" href="resume.asp">Resume</a></li>
+                <li><a class="nav" href="contact.asp">Contact Me</a></li>
+
             </ul>
+        </div>
         <!-- <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button> -->
-        <p>Hello! <br> <br> My name is Kathryn Sanders and I am a college Sophomore studying Computer Science, Music and Electrical Engineering the University of Illinois at Urbana-Chapmaign.</p>
+        <p class="center">Hello!</p>
+        <p>My name is Kathryn Sanders and I am a college Sophomore studying Computer Science, Music and Electrical Engineering the University of Illinois at Urbana-Chapmaign.</p>
         <p>I've been a piano student since age 4, and am currently picking up guitar. 
             I enjoy composing different genres of music electronically using Ableton Live, Sibelius, and Logic Pro.</p>
         <p>I've been swimming competitively since age 5. 
