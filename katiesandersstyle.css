@@ -1,57 +1,82 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Inconsolata|Press+Start+2P&display=swap');
-            h1 {
-                text-align: center;
-                letter-spacing: 10px;
-                font-family: 'Press Start 2P', cursive;
-                color: white;
-            }
-            body {
-                width: 640px;
-                margin-left: auto;
-                margin-right: auto;
-                background-image: url(nightSky.jpg);
-            }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: white;
-            }
-            li {
-                float: left;
-                padding-left: 23px;
-            }
-             a.nav {
-                font-family: 'Inconsolata', monospace;
-                display: block;
-                color: blue;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                
-            }
-            .nav {
-                display: block;
-                padding: 8px;
-                background-color: white;
-            }
-            p {
-                color: white;
-                text-align: justify;
-                font-family: 'Roboto Mono', monospace;
-                font-size: 14px;
-            }
-            .center {
-                color: white;
-                text-align: justify;
-                font-family: 'Roboto Mono', monospace;
-                font-size: 14px;
 
-                text-align: center;
-                color: white;
-            }
-           
+h1 {
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
 
+body {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(nightSky.jpg);
+}
 
-            
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    padding-left: 23px;
+}
+
+a.nav {
+    font-family: 'Inconsolata', monospace;
+    display: block;
+    color: #72ffcb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: initial;
+}
+
+.nav {
+    display: block;
+    border: 1px solid white;
+    padding: 8px;
+}
+
+p {
+    color: white;
+    text-align: justify;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2em;
+}
+
+.center {
+    color: white;
+    text-align: justify;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+}
+
+@keyframes asteriodAnimation {
+    0% {
+        transform: translateX(0%);
+        /* transform: rotateY(0); */
+    }
+
+    20% {
+        transform: translateY(2px);
+        /* transform: rotateY(20deg); */
+    }
+
+    70% {
+        transform: translateX(2px);
+        
+        /* transform: rotateY(-20deg); */
+    }
+}
+
+.asteriodPink {
+    animation: asteriodAnimation 2s ease-in infinite;
+}
+
