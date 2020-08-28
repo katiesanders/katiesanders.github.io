@@ -11,7 +11,8 @@ body {
     width: 640px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(nightSky.jpg);
+    /* background-image: url(assets/nightSky.jpg); */
+    background-color: black;
 }
 
 ul {
@@ -34,6 +35,10 @@ a.nav {
     padding: 14px 16px;
     text-decoration: none;
     border: initial;
+}
+
+a:hover {
+    color:#508f78
 }
 
 .nav {
@@ -60,23 +65,83 @@ p {
 
 @keyframes asteriodAnimation {
     0% {
-        transform: translateX(0%);
-        /* transform: rotateY(0); */
+        transform: translateX(0px);
     }
 
-    20% {
-        transform: translateY(2px);
-        /* transform: rotateY(20deg); */
+    50% {
+        transform: translateY(12px);
     }
 
-    70% {
-        transform: translateX(2px);
-        
-        /* transform: rotateY(-20deg); */
+    100% {
+        transform: translateY(0px);
     }
+}
+
+.asteriodGreen {
+    /* animation: asteriodAnimation 4s linear infinite;
+    position: absolute;
+    opacity: 0.4;
+    left: 10%;
+    top: 15%;
+    z-index: -1;
+    width: 50vw; */
+    position: relative;
+    top: -600px;
+    left: -350px;
+    
+  
 }
 
 .asteriodPink {
-    animation: asteriodAnimation 2s ease-in infinite;
+    /* animation: asteriodAnimation 4s linear infinite; 
+    position: absolute;
+    opacity: 0.4;
+    left: 50%;
+    top: 15%;
+    z-index: -1;
+    width: 50vw; */
+    position: relative;
+    bottom: 600px;
+    left: -350px;
 }
 
+.asteriodBlue {
+    /* animation: asteriodAnimation 4s linear infinite;
+    position: absolute;
+    opacity: 0.4;
+    left: 30%;
+    top: 60%;
+    z-index: -1;
+    width: 50vw; */
+    position: relative;
+    bottom: 1375px;
+    left: 800px;
+}
+
+.asteriodYellow {
+    /* animation: asteriodAnimation 4s linear infinite;
+    position: absolute;
+    opacity: 0.4;
+    left: 30%;
+    top: 60%;
+    z-index: -1;
+    width: 50vw; */
+    position: relative;
+    bottom: 600px;
+    left: -350px;
+}
+
+.asteriodPurple {
+    /* animation: asteriodAnimation 4s linear infinite;
+    position: absolute;
+    opacity: 0.4;
+    left: 10%;
+    top: 15%;
+    z-index: -1;
+    width: 50vw; */
+    position: relative;
+    top: -600px;
+    left: -350px;
+    
+  
+}
